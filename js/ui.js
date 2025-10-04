@@ -1,4 +1,5 @@
 // js/ui.js
+
 export function renderUsers(manager) {
   const list = document.getElementById("usersList");
   const select = document.getElementById("taskUser");
@@ -20,17 +21,14 @@ export function renderUsers(manager) {
     select.appendChild(opt);
   });
 
-  // Evento usando delegação para garantir funcionalidade
+  // Evento para excluir usuário e suas tarefas
   list.addEventListener("click", (e) => {
     const btn = e.target.closest(".delete-user");
     if (btn) {
-      const id = btn.dataset.id;
+      const id = Number(btn.dataset.id); // converte para número
       if (confirm("Excluir usuário? Isso também removerá suas tarefas.")) {
-        // Alteração aplicada aqui
-        manager.users = manager.users.filter((user) => user.id !== Number(id));
-        manager.tasks = manager.tasks.filter(
-          (task) => task.userId !== Number(id)
-        );
+        manager.users = manager.users.filter((user) => user.id !== id);
+        manager.tasks = manager.tasks.filter((task) => task.userId !== id);
 
         manager.save();
         renderUsers(manager);
@@ -54,10 +52,11 @@ export function renderTasks(manager) {
     container.appendChild(div);
   });
 
+  // Evento para excluir tarefas
   container.addEventListener("click", (e) => {
     const btn = e.target.closest(".delete-task");
     if (btn) {
-      const id = btn.dataset.id;
+      const id = Number(btn.dataset.id); // converte para número
       if (confirm("Excluir tarefa?")) {
         manager.tasks = manager.tasks.filter((task) => task.id !== id);
         manager.save();
