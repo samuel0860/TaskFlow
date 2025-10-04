@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamTrack System</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header>
+        <h1>TaskFlow</h1>
+      </header>
+
+      <!-- Sidebar Usuários -->
+      <aside class="sidebar card">
+        <h2>Usuários</h2>
+        <input id="searchUser" placeholder="Pesquisar usuário..." />
+        <div id="usersList" class="list"></div>
+        <form id="userForm">
+          <input type="text" id="userName" placeholder="Nome" required />
+          <input type="email" id="userEmail" placeholder="Email" required />
+          <button type="submit" class="primary">Adicionar</button>
+        </form>
+      </aside>
+
+      <!-- Main - Tarefas -->
+      <main class="card">
+        <h2>Tarefas</h2>
+        <form id="taskForm">
+          <input type="text" id="taskTitle" placeholder="Título" required />
+          <select id="taskUser"></select>
+          <select id="taskPriority">
+            <option value="low">Baixa</option>
+            <option value="high">Alta</option>
+          </select>
+          <textarea id="taskDesc" placeholder="Descrição"></textarea>
+          <button type="submit" class="primary">Adicionar Tarefa</button>
+        </form>
+        <div id="tasksContainer" class="tasks"></div>
+      </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

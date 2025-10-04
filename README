@@ -1,0 +1,81 @@
+# 🌟 TaskFlow
+
+Um **sistema web ** para gerenciamento de **usuários e tarefas**, ideal para equipes e squads que desejam organizar atividades, atribuir tarefas e acompanhar o progresso de forma visual e eficiente.
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+* **HTML5** 🖼️ – Estrutura da aplicação
+* **CSS3** 🎨 – Layout moderno e responsivo
+* **JavaScript (ES6 Modules)** ⚡ – Lógica de negócio, CRUD e eventos
+* **LocalStorage** 💾 – Persistência de dados no navegador
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+teamtrack-system/
+│
+├── index.html           # Página principal
+├── css/
+│   └── style.css        # Estilos do sistema
+├── js/
+│   ├── main.js          # Lógica principal (CRUD + eventos)
+│   ├── ui.js            # Renderização de interface e DOM
+│   ├── gerenciador.js   # Classe Gerenciador (usuários/tarefas)
+│   ├── usuario.js       # Classe Usuário
+│   ├── tarefa.js        # Classe Tarefa
+│   └── produto.js       # Classe Produto (opcional)
+└── assets/
+    └── (imagens e ícones)
+```
+
+---
+
+## ⚡ Funcionalidades Principais
+
+* 👤 **Gerenciar Usuários** – Adicionar, listar e remover
+* 📝 **Gerenciar Tarefas** – Adicionar, listar e remover
+* 🎯 **Atribuir Tarefas** – Associar tarefas a usuários específicos
+* 🔔 **Prioridade de Tarefas** – Baixa ou Alta
+* ✅ **Concluir Tarefas** – Marcar tarefas finalizadas
+* 💾 **Persistência de Dados** – LocalStorage mantém tudo salvo
+
+---
+
+## 🖥️ Layout e Experiência Visual
+
+* Interface moderna, **card-based**
+* Cores suaves com destaque em ações importantes
+* Botões animados e interativos
+* Design **responsivo**, adaptando-se a diferentes telas
+
+
+## 🚀 Como Usar
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/teamtrack-system.git
+```
+
+2. Abra `index.html` no navegador.
+3. Adicione usuários e tarefas, organize seu time e acompanhe o progresso.
+
+---
+
+## 📈 Benefícios do Projeto
+
+* Organiza equipes e tarefas de forma eficiente
+* Facilita acompanhamento de atividades e prioridades
+* Pode ser usado como **protótipo para startups ou squads**
+* Excelente para **portfólio e aprendizado prático em JavaScript**
+
+---
+
+## 📌 Contato
+
+Samuel Sales – [LinkedIn](https://www.linkedin.com/in/samuel-sales-a02a5726a)
+Desenvolvedor Front-End 
